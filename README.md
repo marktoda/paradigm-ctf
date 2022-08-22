@@ -22,7 +22,7 @@ RampUp did really well at first, but started to lose out to economy cars by runn
 This is the code I ended up using for the final hours of the competition. It was tweaked soooo many times and got pretty messy :)
 
 
-**[LearningCar](./src/monaco/src/cars/LearningCar.sol)**
+**[LearningCar](./src/monaco/src/cars/Learning.sol)**
 
 I got super tired of tweaking parameters for PhasedCar, and started to feel like it wasn't getting any better. There were a lot of parameters that I wanted to include (other players' coin balances, speeds, etc) but nothing seemed to improve PhasedCar's performance. I've seen a [CodeBullet](https://www.youtube.com/c/CodeBullet) video or two, so figured it was time to pit cars against each other in a genetic evolution.
 
