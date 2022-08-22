@@ -6,9 +6,9 @@ import util from 'util';
 const execPromise = util.promisify(exec);
 
 const testFile = '../test/Monaco.t.sol'
-const carFile = '../src/cars/AnalyticalLearning.sol'
-const car2File = '../src/cars/AnalyticalLearning2.sol'
-const car3File = '../src/cars/AnalyticalLearning3.sol'
+const carFile = '../src/cars/Learning.sol'
+const car2File = '../src/cars/Learning2.sol'
+const car3File = '../src/cars/Learning3.sol'
 const ANALYTICAL_ADDRESS = '0xefc56627233b02ea95bae7e19f648d7dcd5bb132';
 
 
@@ -43,7 +43,7 @@ async function fitness(phenotype: Phenotype): Promise<number> {
   updateFile(phenotype.weights);
   updateFile(bestWeights, car2File);
   updateFile(oldBestWeights, car3File);
-  const fitness = await runTestWithCompetitor("ShellCar", "ShellCar") + await runTestWithCompetitor("FifthCar", "FifthCar") + await runTestWithCompetitor("AnalyticalLearning2", "AnalyticalLearningCar2") + await runTestWithCompetitor("AnalyticalLearning3", "AnalyticalLearningCar3");
+  const fitness = await runTestWithCompetitor("ShellCar", "ShellCar") + await runTestWithCompetitor("FifthCar", "FifthCar") + await runTestWithCompetitor("Learning2", "LearningCar2") + await runTestWithCompetitor("Learning3", "LearningCar3");
   if (fitness >= bestFitness && !arrayEquals(phenotype.weights, bestWeights)) {
     oldBestWeights = bestWeights;
     bestFitness = fitness;
@@ -114,9 +114,9 @@ async function doesABeatB(a: Phenotype, b: Phenotype): Promise<boolean> {
   updateFile(b.weights, car2File);
   const test = fs.readFileSync(testFile, 'utf-8').split('\n');
   const prevImport = test[7];
-  test[7] = 'import "../src/cars/AnalyticalLearning2.sol";';
+  test[7] = 'import "../src/cars/Learning2.sol";';
   const prevCreation = test[19];
-  test[19] = 'AnalyticalLearningCar2 w1 = new AnalyticalLearningCar2(monaco);';
+  test[19] = 'LearningCar2 w1 = new LearningCar2(monaco);';
   fs.writeFileSync(testFile, test.join('\n'), 'utf-8');
   const analytical2Address = '0x185a4dc360CE69bDCceE33b3784B0282f7961aea';
 
