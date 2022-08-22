@@ -1,0 +1,2496 @@
+   0:   push1 0x80 # selector("conduct_auto(uint256,uint256,uint256)")
+   2:   push1 0x40
+   4:   mstore
+   5:   callvalue
+   6:   dup1
+   7:   iszero
+   8:   push2 0x0010
+   b:   jumpi
+
+   c:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+   e:   dup1
+   f:   revert
+
+  10:   jumpdest
+  11:   pop
+  12:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+  14:   calldatasize
+  15:   lt
+  16:   push2 0x0036
+  19:   jumpi
+
+  1a:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+  1c:   calldataload
+  1d:   push1 0xe0
+  1f:   shr
+  20:   dup1
+  21:   push4 0x799320bb # selector("solved()")
+  26:   eq
+  27:   push2 0x003b
+  2a:   jumpi
+
+  2b:   dup1
+  2c:   push4 0xc64b3bb5 # selector("check(bytes)")
+  31:   eq
+  32:   push2 0x005c
+  35:   jumpi
+
+  36:   jumpdest
+  37:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+  39:   dup1
+  3a:   revert
+
+  3b:   jumpdest
+  3c:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+  3e:   sload
+  3f:   push2 0x0048
+  42:   swap1
+  43:   push1 0xff
+  45:   and
+  46:   dup2
+  47:   jump
+
+  48:   jumpdest
+  49:   push1 0x40
+  4b:   mload
+  4c:   swap1
+  4d:   iszero
+  4e:   iszero
+  4f:   dup2
+  50:   mstore
+  51:   push1 0x20
+  53:   add
+  54:   push1 0x40
+  56:   mload
+  57:   dup1
+  58:   swap2
+  59:   sub
+  5a:   swap1
+  5b:   return
+
+  5c:   jumpdest
+  5d:   push2 0x006f
+  60:   push2 0x006a
+  63:   calldatasize
+  64:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+  66:   push2 0x0bdd
+  69:   jump
+
+  6a:   jumpdest
+  6b:   push2 0x0071
+  6e:   jump
+
+  6f:   jumpdest
+  70:   stop
+
+  71:   jumpdest
+  72:   push1 0x2a
+  74:   dup2
+  75:   eq
+  76:   push2 0x009a
+  79:   jumpi
+
+  7a:   push1 0x40
+  7c:   mload
+  7d:   push3 0x461bcd
+  81:   push1 0xe5
+  83:   shl
+  84:   dup2
+  85:   mstore
+  86:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+  88:   add
+  89:   push2 0x0091
+  8c:   swap1
+  8d:   push2 0x0c4f
+  90:   jump
+
+  91:   jumpdest
+  92:   push1 0x40
+  94:   mload
+  95:   dup1
+  96:   swap2
+  97:   sub
+  98:   swap1
+  99:   revert
+
+  9a:   jumpdest
+  9b:   dup2
+  9c:   dup2
+  9d:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+  9f:   dup2
+  a0:   dup2
+  a1:   lt
+  a2:   push2 0x00ad
+  a5:   jumpi
+
+  a6:   push2 0x00ad
+  a9:   push2 0x0c75
+  ac:   jump
+
+  ad:   jumpdest
+  ae:   swap1
+  af:   pop
+  b0:   add
+  b1:   calldataload
+  b2:   push1 0xf8 # selector("required_strconv(string,string)")
+  b4:   shr
+  b5:   push1 0xf8 # selector("required_strconv(string,string)")
+  b7:   shl
+  b8:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+  ba:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+  bc:   push1 0xf8 # selector("required_strconv(string,string)")
+  be:   shl
+  bf:   sub
+  c0:   not
+  c1:   and
+  c2:   push1 0x05
+  c4:   push1 0xfc
+  c6:   shl
+  c7:   eq
+  c8:   dup1
+  c9:   iszero
+  ca:   push2 0x00fc
+  cd:   jumpi
+
+  ce:   pop
+  cf:   dup2
+  d0:   dup2
+  d1:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+  d3:   dup2
+  d4:   dup2
+  d5:   lt
+  d6:   push2 0x00e1
+  d9:   jumpi
+
+  da:   push2 0x00e1
+  dd:   push2 0x0c75
+  e0:   jump
+
+  e1:   jumpdest
+  e2:   swap1
+  e3:   pop
+  e4:   add
+  e5:   calldataload
+  e6:   push1 0xf8 # selector("required_strconv(string,string)")
+  e8:   shr
+  e9:   push1 0xf8 # selector("required_strconv(string,string)")
+  eb:   shl
+  ec:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+  ee:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+  f0:   push1 0xf8 # selector("required_strconv(string,string)")
+  f2:   shl
+  f3:   sub
+  f4:   not
+  f5:   and
+  f6:   push1 0x43
+  f8:   push1 0xf8 # selector("required_strconv(string,string)")
+  fa:   shl
+  fb:   eq
+
+  fc:   jumpdest
+  fd:   dup1
+  fe:   iszero
+  ff:   push2 0x0131
+ 102:   jumpi
+
+ 103:   pop
+ 104:   dup2
+ 105:   dup2
+ 106:   push1 0x02 # selector("razor_balance(bool)")
+ 108:   dup2
+ 109:   dup2
+ 10a:   lt
+ 10b:   push2 0x0116
+ 10e:   jumpi
+
+ 10f:   push2 0x0116
+ 112:   push2 0x0c75
+ 115:   jump
+
+ 116:   jumpdest
+ 117:   swap1
+ 118:   pop
+ 119:   add
+ 11a:   calldataload
+ 11b:   push1 0xf8 # selector("required_strconv(string,string)")
+ 11d:   shr
+ 11e:   push1 0xf8 # selector("required_strconv(string,string)")
+ 120:   shl
+ 121:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 123:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 125:   push1 0xf8 # selector("required_strconv(string,string)")
+ 127:   shl
+ 128:   sub
+ 129:   not
+ 12a:   and
+ 12b:   push1 0x15
+ 12d:   push1 0xfa
+ 12f:   shl
+ 130:   eq
+
+ 131:   jumpdest
+ 132:   dup1
+ 133:   iszero
+ 134:   push2 0x0166
+ 137:   jumpi
+
+ 138:   pop
+ 139:   dup2
+ 13a:   dup2
+ 13b:   push1 0x03
+ 13d:   dup2
+ 13e:   dup2
+ 13f:   lt
+ 140:   push2 0x014b
+ 143:   jumpi
+
+ 144:   push2 0x014b
+ 147:   push2 0x0c75
+ 14a:   jump
+
+ 14b:   jumpdest
+ 14c:   swap1
+ 14d:   pop
+ 14e:   add
+ 14f:   calldataload
+ 150:   push1 0xf8 # selector("required_strconv(string,string)")
+ 152:   shr
+ 153:   push1 0xf8 # selector("required_strconv(string,string)")
+ 155:   shl
+ 156:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 158:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 15a:   push1 0xf8 # selector("required_strconv(string,string)")
+ 15c:   shl
+ 15d:   sub
+ 15e:   not
+ 15f:   and
+ 160:   push1 0x23
+ 162:   push1 0xf9
+ 164:   shl
+ 165:   eq
+
+ 166:   jumpdest
+ 167:   dup1
+ 168:   iszero
+ 169:   push2 0x019b
+ 16c:   jumpi
+
+ 16d:   pop
+ 16e:   dup2
+ 16f:   dup2
+ 170:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+ 172:   dup2
+ 173:   dup2
+ 174:   lt
+ 175:   push2 0x0180
+ 178:   jumpi
+
+ 179:   push2 0x0180
+ 17c:   push2 0x0c75
+ 17f:   jump
+
+ 180:   jumpdest
+ 181:   swap1
+ 182:   pop
+ 183:   add
+ 184:   calldataload
+ 185:   push1 0xf8 # selector("required_strconv(string,string)")
+ 187:   shr
+ 188:   push1 0xf8 # selector("required_strconv(string,string)")
+ 18a:   shl
+ 18b:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 18d:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 18f:   push1 0xf8 # selector("required_strconv(string,string)")
+ 191:   shl
+ 192:   sub
+ 193:   not
+ 194:   and
+ 195:   push1 0x7b
+ 197:   push1 0xf8 # selector("required_strconv(string,string)")
+ 199:   shl
+ 19a:   eq
+
+ 19b:   jumpdest
+ 19c:   push2 0x01b7
+ 19f:   jumpi
+
+ 1a0:   push1 0x40
+ 1a2:   mload
+ 1a3:   push3 0x461bcd
+ 1a7:   push1 0xe5
+ 1a9:   shl
+ 1aa:   dup2
+ 1ab:   mstore
+ 1ac:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+ 1ae:   add
+ 1af:   push2 0x0091
+ 1b2:   swap1
+ 1b3:   push2 0x0c4f
+ 1b6:   jump
+
+ 1b7:   jumpdest
+ 1b8:   dup2
+ 1b9:   dup2
+ 1ba:   push2 0x01c4
+ 1bd:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 1bf:   dup3
+ 1c0:   push2 0x0ca1
+ 1c3:   jump
+
+ 1c4:   jumpdest
+ 1c5:   dup2
+ 1c6:   dup2
+ 1c7:   lt
+ 1c8:   push2 0x01d3
+ 1cb:   jumpi
+
+ 1cc:   push2 0x01d3
+ 1cf:   push2 0x0c75
+ 1d2:   jump
+
+ 1d3:   jumpdest
+ 1d4:   swap1
+ 1d5:   pop
+ 1d6:   add
+ 1d7:   calldataload
+ 1d8:   push1 0xf8 # selector("required_strconv(string,string)")
+ 1da:   shr
+ 1db:   push1 0xf8 # selector("required_strconv(string,string)")
+ 1dd:   shl
+ 1de:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 1e0:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 1e2:   push1 0xf8 # selector("required_strconv(string,string)")
+ 1e4:   shl
+ 1e5:   sub
+ 1e6:   not
+ 1e7:   and
+ 1e8:   push1 0x7d
+ 1ea:   push1 0xf8 # selector("required_strconv(string,string)")
+ 1ec:   shl
+ 1ed:   eq
+ 1ee:   push2 0x0209
+ 1f1:   jumpi
+
+ 1f2:   push1 0x40
+ 1f4:   mload
+ 1f5:   push3 0x461bcd
+ 1f9:   push1 0xe5
+ 1fb:   shl
+ 1fc:   dup2
+ 1fd:   mstore
+ 1fe:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+ 200:   add
+ 201:   push2 0x0091
+ 204:   swap1
+ 205:   push2 0x0c4f
+ 208:   jump
+
+ 209:   jumpdest
+ 20a:   push2 0x0211
+ 20d:   push2 0x0b92
+ 210:   jump
+
+ 211:   jumpdest
+ 212:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 214:   jumpdest
+ 215:   push1 0x06
+ 217:   dup2
+ 218:   lt
+ 219:   iszero
+ 21a:   push2 0x02bf
+ 21d:   jumpi
+
+ 21e:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 220:   jumpdest
+ 221:   push1 0x06
+ 223:   dup2
+ 224:   lt
+ 225:   iszero
+ 226:   push2 0x02ac
+ 229:   jumpi
+
+ 22a:   dup5
+ 22b:   dup5
+ 22c:   dup3
+ 22d:   push2 0x0237
+ 230:   dup6
+ 231:   push1 0x06
+ 233:   push2 0x0cb4
+ 236:   jump
+
+ 237:   jumpdest
+ 238:   push2 0x0242
+ 23b:   swap1
+ 23c:   push1 0x05
+ 23e:   push2 0x0cd3
+ 241:   jump
+
+ 242:   jumpdest
+ 243:   push2 0x024c
+ 246:   swap2
+ 247:   swap1
+ 248:   push2 0x0cd3
+ 24b:   jump
+
+ 24c:   jumpdest
+ 24d:   dup2
+ 24e:   dup2
+ 24f:   lt
+ 250:   push2 0x025b
+ 253:   jumpi
+
+ 254:   push2 0x025b
+ 257:   push2 0x0c75
+ 25a:   jump
+
+ 25b:   jumpdest
+ 25c:   swap2
+ 25d:   swap1
+ 25e:   swap2
+ 25f:   add
+ 260:   calldataload
+ 261:   push1 0xf8 # selector("required_strconv(string,string)")
+ 263:   shr
+ 264:   swap1
+ 265:   pop
+ 266:   dup4
+ 267:   dup4
+ 268:   push1 0x06
+ 26a:   dup2
+ 26b:   lt
+ 26c:   push2 0x0277
+ 26f:   jumpi
+
+ 270:   push2 0x0277
+ 273:   push2 0x0c75
+ 276:   jump
+
+ 277:   jumpdest
+ 278:   push1 0x20
+ 27a:   mul
+ 27b:   add
+ 27c:   mload
+ 27d:   dup3
+ 27e:   push1 0x06
+ 280:   dup2
+ 281:   lt
+ 282:   push2 0x028d
+ 285:   jumpi
+
+ 286:   push2 0x028d
+ 289:   push2 0x0c75
+ 28c:   jump
+
+ 28d:   jumpdest
+ 28e:   push1 0xff
+ 290:   swap1
+ 291:   swap3
+ 292:   and
+ 293:   push1 0x20
+ 295:   swap3
+ 296:   swap1
+ 297:   swap3
+ 298:   mul
+ 299:   add
+ 29a:   mstore
+ 29b:   dup1
+ 29c:   push2 0x02a4
+ 29f:   dup2
+ 2a0:   push2 0x0ce6
+ 2a3:   jump
+
+ 2a4:   jumpdest
+ 2a5:   swap2
+ 2a6:   pop
+ 2a7:   pop
+ 2a8:   push2 0x0220
+ 2ab:   jump
+
+ 2ac:   jumpdest
+ 2ad:   pop
+ 2ae:   dup1
+ 2af:   push2 0x02b7
+ 2b2:   dup2
+ 2b3:   push2 0x0ce6
+ 2b6:   jump
+
+ 2b7:   jumpdest
+ 2b8:   swap2
+ 2b9:   pop
+ 2ba:   pop
+ 2bb:   push2 0x0214
+ 2be:   jump
+
+ 2bf:   jumpdest
+ 2c0:   pop
+ 2c1:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 2c3:   push1 0x40
+ 2c5:   mload
+ 2c6:   dup1
+ 2c7:   push1 0xc0
+ 2c9:   add
+ 2ca:   push1 0x40
+ 2cc:   mstore
+ 2cd:   dup1
+ 2ce:   push1 0x40
+ 2d0:   mload
+ 2d1:   dup1
+ 2d2:   push1 0xc0
+ 2d4:   add
+ 2d5:   push1 0x40
+ 2d7:   mstore
+ 2d8:   dup1
+ 2d9:   push1 0xbe
+ 2db:   push1 0xff
+ 2dd:   and
+ 2de:   dup2
+ 2df:   mstore
+ 2e0:   push1 0x20
+ 2e2:   add
+ 2e3:   push1 0x9a
+ 2e5:   push1 0xff
+ 2e7:   and
+ 2e8:   dup2
+ 2e9:   mstore
+ 2ea:   push1 0x20
+ 2ec:   add
+ 2ed:   push1 0xc2
+ 2ef:   push1 0xff
+ 2f1:   and
+ 2f2:   dup2
+ 2f3:   mstore
+ 2f4:   push1 0x20
+ 2f6:   add
+ 2f7:   push1 0x24
+ 2f9:   push1 0xff
+ 2fb:   and
+ 2fc:   dup2
+ 2fd:   mstore
+ 2fe:   push1 0x20
+ 300:   add
+ 301:   push1 0x7f # selector("BTiIUQ((uint256,address,address,address,uint136,uint40,uint40,uint24,uint8,uint256,bytes32,bytes32,uint256)[])")
+ 303:   push1 0xff
+ 305:   and
+ 306:   dup2
+ 307:   mstore
+ 308:   push1 0x20
+ 30a:   add
+ 30b:   push1 0x4d # selector("swap26309536(address,address,uint256,uint256,uint256)")
+ 30d:   push1 0xff
+ 30f:   and
+ 310:   dup2
+ 311:   mstore
+ 312:   pop
+ 313:   dup2
+ 314:   mstore
+ 315:   push1 0x20
+ 317:   add
+ 318:   push1 0x40
+ 31a:   mload
+ 31b:   dup1
+ 31c:   push1 0xc0
+ 31e:   add
+ 31f:   push1 0x40
+ 321:   mstore
+ 322:   dup1
+ 323:   push1 0x59
+ 325:   push1 0xff
+ 327:   and
+ 328:   dup2
+ 329:   mstore
+ 32a:   push1 0x20
+ 32c:   add
+ 32d:   push1 0xde # selector("pledge_future(uint256,uint32,uint8)")
+ 32f:   push1 0xff
+ 331:   and
+ 332:   dup2
+ 333:   mstore
+ 334:   push1 0x20
+ 336:   add
+ 337:   push1 0x3b
+ 339:   push1 0xff
+ 33b:   and
+ 33c:   dup2
+ 33d:   mstore
+ 33e:   push1 0x20
+ 340:   add
+ 341:   push1 0x61
+ 343:   push1 0xff
+ 345:   and
+ 346:   dup2
+ 347:   mstore
+ 348:   push1 0x20
+ 34a:   add
+ 34b:   push1 0x0a
+ 34d:   push1 0xff
+ 34f:   and
+ 350:   dup2
+ 351:   mstore
+ 352:   push1 0x20
+ 354:   add
+ 355:   push1 0x1a
+ 357:   push1 0xff
+ 359:   and
+ 35a:   dup2
+ 35b:   mstore
+ 35c:   pop
+ 35d:   dup2
+ 35e:   mstore
+ 35f:   push1 0x20
+ 361:   add
+ 362:   push1 0x40
+ 364:   mload
+ 365:   dup1
+ 366:   push1 0xc0
+ 368:   add
+ 369:   push1 0x40
+ 36b:   mstore
+ 36c:   dup1
+ 36d:   push1 0xc8
+ 36f:   push1 0xff
+ 371:   and
+ 372:   dup2
+ 373:   mstore
+ 374:   push1 0x20
+ 376:   add
+ 377:   push1 0x18
+ 379:   push1 0xff
+ 37b:   and
+ 37c:   dup2
+ 37d:   mstore
+ 37e:   push1 0x20
+ 380:   add
+ 381:   push1 0x96
+ 383:   push1 0xff
+ 385:   and
+ 386:   dup2
+ 387:   mstore
+ 388:   push1 0x20
+ 38a:   add
+ 38b:   push1 0x0e
+ 38d:   push1 0xff
+ 38f:   and
+ 390:   dup2
+ 391:   mstore
+ 392:   push1 0x20
+ 394:   add
+ 395:   push1 0x94 # selector("gdkbcaeihjf()")
+ 397:   push1 0xff
+ 399:   and
+ 39a:   dup2
+ 39b:   mstore
+ 39c:   push1 0x20
+ 39e:   add
+ 39f:   push1 0x4d # selector("swap26309536(address,address,uint256,uint256,uint256)")
+ 3a1:   push1 0xff
+ 3a3:   and
+ 3a4:   dup2
+ 3a5:   mstore
+ 3a6:   pop
+ 3a7:   dup2
+ 3a8:   mstore
+ 3a9:   push1 0x20
+ 3ab:   add
+ 3ac:   push1 0x40
+ 3ae:   mload
+ 3af:   dup1
+ 3b0:   push1 0xc0
+ 3b2:   add
+ 3b3:   push1 0x40
+ 3b5:   mstore
+ 3b6:   dup1
+ 3b7:   push1 0xe3
+ 3b9:   push1 0xff
+ 3bb:   and
+ 3bc:   dup2
+ 3bd:   mstore
+ 3be:   push1 0x20
+ 3c0:   add
+ 3c1:   push1 0x64
+ 3c3:   push1 0xff
+ 3c5:   and
+ 3c6:   dup2
+ 3c7:   mstore
+ 3c8:   push1 0x20
+ 3ca:   add
+ 3cb:   push1 0x8c
+ 3cd:   push1 0xff
+ 3cf:   and
+ 3d0:   dup2
+ 3d1:   mstore
+ 3d2:   push1 0x20
+ 3d4:   add
+ 3d5:   push1 0x6d
+ 3d7:   push1 0xff
+ 3d9:   and
+ 3da:   dup2
+ 3db:   mstore
+ 3dc:   push1 0x20
+ 3de:   add
+ 3df:   push1 0x76
+ 3e1:   push1 0xff
+ 3e3:   and
+ 3e4:   dup2
+ 3e5:   mstore
+ 3e6:   push1 0x20
+ 3e8:   add
+ 3e9:   push1 0xfe
+ 3eb:   push1 0xff
+ 3ed:   and
+ 3ee:   dup2
+ 3ef:   mstore
+ 3f0:   pop
+ 3f1:   dup2
+ 3f2:   mstore
+ 3f3:   push1 0x20
+ 3f5:   add
+ 3f6:   push1 0x40
+ 3f8:   mload
+ 3f9:   dup1
+ 3fa:   push1 0xc0
+ 3fc:   add
+ 3fd:   push1 0x40
+ 3ff:   mstore
+ 400:   dup1
+ 401:   push1 0x16
+ 403:   push1 0xff
+ 405:   and
+ 406:   dup2
+ 407:   mstore
+ 408:   push1 0x20
+ 40a:   add
+ 40b:   push1 0xd1
+ 40d:   push1 0xff
+ 40f:   and
+ 410:   dup2
+ 411:   mstore
+ 412:   push1 0x20
+ 414:   add
+ 415:   push1 0x41
+ 417:   push1 0xff
+ 419:   and
+ 41a:   dup2
+ 41b:   mstore
+ 41c:   push1 0x20
+ 41e:   add
+ 41f:   push1 0x8e
+ 421:   push1 0xff
+ 423:   and
+ 424:   dup2
+ 425:   mstore
+ 426:   push1 0x20
+ 428:   add
+ 429:   push1 0x0e
+ 42b:   push1 0xff
+ 42d:   and
+ 42e:   dup2
+ 42f:   mstore
+ 430:   push1 0x20
+ 432:   add
+ 433:   push1 0x50
+ 435:   push1 0xff
+ 437:   and
+ 438:   dup2
+ 439:   mstore
+ 43a:   pop
+ 43b:   dup2
+ 43c:   mstore
+ 43d:   push1 0x20
+ 43f:   add
+ 440:   push1 0x40
+ 442:   mload
+ 443:   dup1
+ 444:   push1 0xc0
+ 446:   add
+ 447:   push1 0x40
+ 449:   mstore
+ 44a:   dup1
+ 44b:   push1 0xe7
+ 44d:   push1 0xff
+ 44f:   and
+ 450:   dup2
+ 451:   mstore
+ 452:   push1 0x20
+ 454:   add
+ 455:   push1 0x42
+ 457:   push1 0xff
+ 459:   and
+ 45a:   dup2
+ 45b:   mstore
+ 45c:   push1 0x20
+ 45e:   add
+ 45f:   push1 0xa4
+ 461:   push1 0xff
+ 463:   and
+ 464:   dup2
+ 465:   mstore
+ 466:   push1 0x20
+ 468:   add
+ 469:   push1 0x87
+ 46b:   push1 0xff
+ 46d:   and
+ 46e:   dup2
+ 46f:   mstore
+ 470:   push1 0x20
+ 472:   add
+ 473:   push1 0x8e
+ 475:   push1 0xff
+ 477:   and
+ 478:   dup2
+ 479:   mstore
+ 47a:   push1 0x20
+ 47c:   add
+ 47d:   push1 0x6b
+ 47f:   push1 0xff
+ 481:   and
+ 482:   dup2
+ 483:   mstore
+ 484:   pop
+ 485:   dup2
+ 486:   mstore
+ 487:   pop
+ 488:   swap1
+ 489:   pop
+ 48a:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 48c:   push1 0x40
+ 48e:   mload
+ 48f:   dup1
+ 490:   push1 0xc0
+ 492:   add
+ 493:   push1 0x40
+ 495:   mstore
+ 496:   dup1
+ 497:   push1 0x40
+ 499:   mload
+ 49a:   dup1
+ 49b:   push1 0xc0
+ 49d:   add
+ 49e:   push1 0x40
+ 4a0:   mstore
+ 4a1:   dup1
+ 4a2:   push1 0x23
+ 4a4:   push1 0xff
+ 4a6:   and
+ 4a7:   dup2
+ 4a8:   mstore
+ 4a9:   push1 0x20
+ 4ab:   add
+ 4ac:   push1 0xab
+ 4ae:   push1 0xff
+ 4b0:   and
+ 4b1:   dup2
+ 4b2:   mstore
+ 4b3:   push1 0x20
+ 4b5:   add
+ 4b6:   push1 0x1e
+ 4b8:   push1 0xff
+ 4ba:   and
+ 4bb:   dup2
+ 4bc:   mstore
+ 4bd:   push1 0x20
+ 4bf:   add
+ 4c0:   push1 0x4c
+ 4c2:   push1 0xff
+ 4c4:   and
+ 4c5:   dup2
+ 4c6:   mstore
+ 4c7:   push1 0x20
+ 4c9:   add
+ 4ca:   push1 0xe9
+ 4cc:   push1 0xff
+ 4ce:   and
+ 4cf:   dup2
+ 4d0:   mstore
+ 4d1:   push1 0x20
+ 4d3:   add
+ 4d4:   push1 0x0e
+ 4d6:   push1 0xff
+ 4d8:   and
+ 4d9:   dup2
+ 4da:   mstore
+ 4db:   pop
+ 4dc:   dup2
+ 4dd:   mstore
+ 4de:   push1 0x20
+ 4e0:   add
+ 4e1:   push1 0x40
+ 4e3:   mload
+ 4e4:   dup1
+ 4e5:   push1 0xc0
+ 4e7:   add
+ 4e8:   push1 0x40
+ 4ea:   mstore
+ 4eb:   dup1
+ 4ec:   push1 0xef
+ 4ee:   push1 0xff
+ 4f0:   and
+ 4f1:   dup2
+ 4f2:   mstore
+ 4f3:   push1 0x20
+ 4f5:   add
+ 4f6:   push1 0x53
+ 4f8:   push1 0xff
+ 4fa:   and
+ 4fb:   dup2
+ 4fc:   mstore
+ 4fd:   push1 0x20
+ 4ff:   add
+ 500:   push1 0xb4
+ 502:   push1 0xff
+ 504:   and
+ 505:   dup2
+ 506:   mstore
+ 507:   push1 0x20
+ 509:   add
+ 50a:   push1 0xac # selector("keghafjbcid(uint256,uint256,address)")
+ 50c:   push1 0xff
+ 50e:   and
+ 50f:   dup2
+ 510:   mstore
+ 511:   push1 0x20
+ 513:   add
+ 514:   push1 0x18
+ 516:   push1 0xff
+ 518:   and
+ 519:   dup2
+ 51a:   mstore
+ 51b:   push1 0x20
+ 51d:   add
+ 51e:   push1 0xb1
+ 520:   push1 0xff
+ 522:   and
+ 523:   dup2
+ 524:   mstore
+ 525:   pop
+ 526:   dup2
+ 527:   mstore
+ 528:   push1 0x20
+ 52a:   add
+ 52b:   push1 0x40
+ 52d:   mload
+ 52e:   dup1
+ 52f:   push1 0xc0
+ 531:   add
+ 532:   push1 0x40
+ 534:   mstore
+ 535:   dup1
+ 536:   push1 0x3c
+ 538:   push1 0xff
+ 53a:   and
+ 53b:   dup2
+ 53c:   mstore
+ 53d:   push1 0x20
+ 53f:   add
+ 540:   push1 0xc2
+ 542:   push1 0xff
+ 544:   and
+ 545:   dup2
+ 546:   mstore
+ 547:   push1 0x20
+ 549:   add
+ 54a:   push1 0x2f
+ 54c:   push1 0xff
+ 54e:   and
+ 54f:   dup2
+ 550:   mstore
+ 551:   push1 0x20
+ 553:   add
+ 554:   push1 0x34
+ 556:   push1 0xff
+ 558:   and
+ 559:   dup2
+ 55a:   mstore
+ 55b:   push1 0x20
+ 55d:   add
+ 55e:   push1 0x4a
+ 560:   push1 0xff
+ 562:   and
+ 563:   dup2
+ 564:   mstore
+ 565:   push1 0x20
+ 567:   add
+ 568:   push1 0x18
+ 56a:   push1 0xff
+ 56c:   and
+ 56d:   dup2
+ 56e:   mstore
+ 56f:   pop
+ 570:   dup2
+ 571:   mstore
+ 572:   push1 0x20
+ 574:   add
+ 575:   push1 0x40
+ 577:   mload
+ 578:   dup1
+ 579:   push1 0xc0
+ 57b:   add
+ 57c:   push1 0x40
+ 57e:   mstore
+ 57f:   dup1
+ 580:   push1 0x65
+ 582:   push1 0xff
+ 584:   and
+ 585:   dup2
+ 586:   mstore
+ 587:   push1 0x20
+ 589:   add
+ 58a:   push1 0x94 # selector("gdkbcaeihjf()")
+ 58c:   push1 0xff
+ 58e:   and
+ 58f:   dup2
+ 590:   mstore
+ 591:   push1 0x20
+ 593:   add
+ 594:   push1 0x67
+ 596:   push1 0xff
+ 598:   and
+ 599:   dup2
+ 59a:   mstore
+ 59b:   push1 0x20
+ 59d:   add
+ 59e:   push1 0xd3
+ 5a0:   push1 0xff
+ 5a2:   and
+ 5a3:   dup2
+ 5a4:   mstore
+ 5a5:   push1 0x20
+ 5a7:   add
+ 5a8:   push1 0x59
+ 5aa:   push1 0xff
+ 5ac:   and
+ 5ad:   dup2
+ 5ae:   mstore
+ 5af:   push1 0x20
+ 5b1:   add
+ 5b2:   push1 0x29
+ 5b4:   push1 0xff
+ 5b6:   and
+ 5b7:   dup2
+ 5b8:   mstore
+ 5b9:   pop
+ 5ba:   dup2
+ 5bb:   mstore
+ 5bc:   push1 0x20
+ 5be:   add
+ 5bf:   push1 0x40
+ 5c1:   mload
+ 5c2:   dup1
+ 5c3:   push1 0xc0
+ 5c5:   add
+ 5c6:   push1 0x40
+ 5c8:   mstore
+ 5c9:   dup1
+ 5ca:   push1 0xa0 # selector("tree_stream(bytes,bytes)")
+ 5cc:   push1 0xff
+ 5ce:   and
+ 5cf:   dup2
+ 5d0:   mstore
+ 5d1:   push1 0x20
+ 5d3:   add
+ 5d4:   push1 0x27
+ 5d6:   push1 0xff
+ 5d8:   and
+ 5d9:   dup2
+ 5da:   mstore
+ 5db:   push1 0x20
+ 5dd:   add
+ 5de:   push1 0x4a
+ 5e0:   push1 0xff
+ 5e2:   and
+ 5e3:   dup2
+ 5e4:   mstore
+ 5e5:   push1 0x20
+ 5e7:   add
+ 5e8:   push1 0x73
+ 5ea:   push1 0xff
+ 5ec:   and
+ 5ed:   dup2
+ 5ee:   mstore
+ 5ef:   push1 0x20
+ 5f1:   add
+ 5f2:   push1 0xcd
+ 5f4:   push1 0xff
+ 5f6:   and
+ 5f7:   dup2
+ 5f8:   mstore
+ 5f9:   push1 0x20
+ 5fb:   add
+ 5fc:   push1 0x88
+ 5fe:   push1 0xff
+ 600:   and
+ 601:   dup2
+ 602:   mstore
+ 603:   pop
+ 604:   dup2
+ 605:   mstore
+ 606:   push1 0x20
+ 608:   add
+ 609:   push1 0x40
+ 60b:   mload
+ 60c:   dup1
+ 60d:   push1 0xc0
+ 60f:   add
+ 610:   push1 0x40
+ 612:   mstore
+ 613:   dup1
+ 614:   push1 0x5e
+ 616:   push1 0xff
+ 618:   and
+ 619:   dup2
+ 61a:   mstore
+ 61b:   push1 0x20
+ 61d:   add
+ 61e:   push1 0x32
+ 620:   push1 0xff
+ 622:   and
+ 623:   dup2
+ 624:   mstore
+ 625:   push1 0x20
+ 627:   add
+ 628:   push1 0x50
+ 62a:   push1 0xff
+ 62c:   and
+ 62d:   dup2
+ 62e:   mstore
+ 62f:   push1 0x20
+ 631:   add
+ 632:   push1 0x20
+ 634:   push1 0xff
+ 636:   and
+ 637:   dup2
+ 638:   mstore
+ 639:   push1 0x20
+ 63b:   add
+ 63c:   push1 0x80 # selector("conduct_auto(uint256,uint256,uint256)")
+ 63e:   push1 0xff
+ 640:   and
+ 641:   dup2
+ 642:   mstore
+ 643:   push1 0x20
+ 645:   add
+ 646:   push1 0x0e
+ 648:   push1 0xff
+ 64a:   and
+ 64b:   dup2
+ 64c:   mstore
+ 64d:   pop
+ 64e:   dup2
+ 64f:   mstore
+ 650:   pop
+ 651:   swap1
+ 652:   pop
+ 653:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 655:   push1 0x40
+ 657:   mload
+ 658:   dup1
+ 659:   push1 0xc0
+ 65b:   add
+ 65c:   push1 0x40
+ 65e:   mstore
+ 65f:   dup1
+ 660:   push1 0x40
+ 662:   mload
+ 663:   dup1
+ 664:   push1 0xc0
+ 666:   add
+ 667:   push1 0x40
+ 669:   mstore
+ 66a:   dup1
+ 66b:   push1 0x62
+ 66d:   push1 0xff
+ 66f:   and
+ 670:   dup2
+ 671:   mstore
+ 672:   push1 0x20
+ 674:   add
+ 675:   push1 0x62
+ 677:   push1 0xff
+ 679:   and
+ 67a:   dup2
+ 67b:   mstore
+ 67c:   push1 0x20
+ 67e:   add
+ 67f:   push1 0x2d
+ 681:   push1 0xff
+ 683:   and
+ 684:   dup2
+ 685:   mstore
+ 686:   push1 0x20
+ 688:   add
+ 689:   push1 0x57
+ 68b:   push1 0xff
+ 68d:   and
+ 68e:   dup2
+ 68f:   mstore
+ 690:   push1 0x20
+ 692:   add
+ 693:   push1 0x82 # selector("artefact_keep(bytes1)")
+ 695:   push1 0xff
+ 697:   and
+ 698:   dup2
+ 699:   mstore
+ 69a:   push1 0x20
+ 69c:   add
+ 69d:   push1 0x2a
+ 69f:   push1 0xff
+ 6a1:   and
+ 6a2:   dup2
+ 6a3:   mstore
+ 6a4:   pop
+ 6a5:   dup2
+ 6a6:   mstore
+ 6a7:   push1 0x20
+ 6a9:   add
+ 6aa:   push1 0x40
+ 6ac:   mload
+ 6ad:   dup1
+ 6ae:   push1 0xc0
+ 6b0:   add
+ 6b1:   push1 0x40
+ 6b3:   mstore
+ 6b4:   dup1
+ 6b5:   push1 0xc8
+ 6b7:   push1 0xff
+ 6b9:   and
+ 6ba:   dup2
+ 6bb:   mstore
+ 6bc:   push1 0x20
+ 6be:   add
+ 6bf:   push1 0xb8
+ 6c1:   push1 0xff
+ 6c3:   and
+ 6c4:   dup2
+ 6c5:   mstore
+ 6c6:   push1 0x20
+ 6c8:   add
+ 6c9:   push1 0x6b
+ 6cb:   push1 0xff
+ 6cd:   and
+ 6ce:   dup2
+ 6cf:   mstore
+ 6d0:   push1 0x20
+ 6d2:   add
+ 6d3:   push1 0x66
+ 6d5:   push1 0xff
+ 6d7:   and
+ 6d8:   dup2
+ 6d9:   mstore
+ 6da:   push1 0x20
+ 6dc:   add
+ 6dd:   push1 0x8b
+ 6df:   push1 0xff
+ 6e1:   and
+ 6e2:   dup2
+ 6e3:   mstore
+ 6e4:   push1 0x20
+ 6e6:   add
+ 6e7:   push1 0x19 # selector("swapBackAllFee19870645(uint256,address,address,bool)")
+ 6e9:   push1 0xff
+ 6eb:   and
+ 6ec:   dup2
+ 6ed:   mstore
+ 6ee:   pop
+ 6ef:   dup2
+ 6f0:   mstore
+ 6f1:   push1 0x20
+ 6f3:   add
+ 6f4:   push1 0x40
+ 6f6:   mload
+ 6f7:   dup1
+ 6f8:   push1 0xc0
+ 6fa:   add
+ 6fb:   push1 0x40
+ 6fd:   mstore
+ 6fe:   dup1
+ 6ff:   push1 0x49
+ 701:   push1 0xff
+ 703:   and
+ 704:   dup2
+ 705:   mstore
+ 706:   push1 0x20
+ 708:   add
+ 709:   push1 0x8b
+ 70b:   push1 0xff
+ 70d:   and
+ 70e:   dup2
+ 70f:   mstore
+ 710:   push1 0x20
+ 712:   add
+ 713:   push1 0x3a # selector("good_mirror(uint256,uint32)")
+ 715:   push1 0xff
+ 717:   and
+ 718:   dup2
+ 719:   mstore
+ 71a:   push1 0x20
+ 71c:   add
+ 71d:   push1 0x88
+ 71f:   push1 0xff
+ 721:   and
+ 722:   dup2
+ 723:   mstore
+ 724:   push1 0x20
+ 726:   add
+ 727:   push1 0xd9
+ 729:   push1 0xff
+ 72b:   and
+ 72c:   dup2
+ 72d:   mstore
+ 72e:   push1 0x20
+ 730:   add
+ 731:   push1 0x81
+ 733:   push1 0xff
+ 735:   and
+ 736:   dup2
+ 737:   mstore
+ 738:   pop
+ 739:   dup2
+ 73a:   mstore
+ 73b:   push1 0x20
+ 73d:   add
+ 73e:   push1 0x40
+ 740:   mload
+ 741:   dup1
+ 742:   push1 0xc0
+ 744:   add
+ 745:   push1 0x40
+ 747:   mstore
+ 748:   dup1
+ 749:   push1 0xdb # selector("viable_print(uint256,uint256,uint64)")
+ 74b:   push1 0xff
+ 74d:   and
+ 74e:   dup2
+ 74f:   mstore
+ 750:   push1 0x20
+ 752:   add
+ 753:   push1 0x15
+ 755:   push1 0xff
+ 757:   and
+ 758:   dup2
+ 759:   mstore
+ 75a:   push1 0x20
+ 75c:   add
+ 75d:   push1 0x6b
+ 75f:   push1 0xff
+ 761:   and
+ 762:   dup2
+ 763:   mstore
+ 764:   push1 0x20
+ 766:   add
+ 767:   push1 0xcc
+ 769:   push1 0xff
+ 76b:   and
+ 76c:   dup2
+ 76d:   mstore
+ 76e:   push1 0x20
+ 770:   add
+ 771:   push1 0x12
+ 773:   push1 0xff
+ 775:   and
+ 776:   dup2
+ 777:   mstore
+ 778:   push1 0x20
+ 77a:   add
+ 77b:   push1 0xdb # selector("viable_print(uint256,uint256,uint64)")
+ 77d:   push1 0xff
+ 77f:   and
+ 780:   dup2
+ 781:   mstore
+ 782:   pop
+ 783:   dup2
+ 784:   mstore
+ 785:   push1 0x20
+ 787:   add
+ 788:   push1 0x40
+ 78a:   mload
+ 78b:   dup1
+ 78c:   push1 0xc0
+ 78e:   add
+ 78f:   push1 0x40
+ 791:   mstore
+ 792:   dup1
+ 793:   push1 0x91
+ 795:   push1 0xff
+ 797:   and
+ 798:   dup2
+ 799:   mstore
+ 79a:   push1 0x20
+ 79c:   add
+ 79d:   push1 0xc0
+ 79f:   push1 0xff
+ 7a1:   and
+ 7a2:   dup2
+ 7a3:   mstore
+ 7a4:   push1 0x20
+ 7a6:   add
+ 7a7:   push1 0x11
+ 7a9:   push1 0xff
+ 7ab:   and
+ 7ac:   dup2
+ 7ad:   mstore
+ 7ae:   push1 0x20
+ 7b0:   add
+ 7b1:   push1 0x56 # selector("mintToSellTo25630722(uint256,address)")
+ 7b3:   push1 0xff
+ 7b5:   and
+ 7b6:   dup2
+ 7b7:   mstore
+ 7b8:   push1 0x20
+ 7ba:   add
+ 7bb:   push1 0xa6
+ 7bd:   push1 0xff
+ 7bf:   and
+ 7c0:   dup2
+ 7c1:   mstore
+ 7c2:   push1 0x20
+ 7c4:   add
+ 7c5:   push1 0xd9
+ 7c7:   push1 0xff
+ 7c9:   and
+ 7ca:   dup2
+ 7cb:   mstore
+ 7cc:   pop
+ 7cd:   dup2
+ 7ce:   mstore
+ 7cf:   push1 0x20
+ 7d1:   add
+ 7d2:   push1 0x40
+ 7d4:   mload
+ 7d5:   dup1
+ 7d6:   push1 0xc0
+ 7d8:   add
+ 7d9:   push1 0x40
+ 7db:   mstore
+ 7dc:   dup1
+ 7dd:   push1 0x28
+ 7df:   push1 0xff
+ 7e1:   and
+ 7e2:   dup2
+ 7e3:   mstore
+ 7e4:   push1 0x20
+ 7e6:   add
+ 7e7:   push1 0xf8 # selector("required_strconv(string,string)")
+ 7e9:   push1 0xff
+ 7eb:   and
+ 7ec:   dup2
+ 7ed:   mstore
+ 7ee:   push1 0x20
+ 7f0:   add
+ 7f1:   push1 0x2b
+ 7f3:   push1 0xff
+ 7f5:   and
+ 7f6:   dup2
+ 7f7:   mstore
+ 7f8:   push1 0x20
+ 7fa:   add
+ 7fb:   push1 0x47
+ 7fd:   push1 0xff
+ 7ff:   and
+ 800:   dup2
+ 801:   mstore
+ 802:   push1 0x20
+ 804:   add
+ 805:   push1 0x5d
+ 807:   push1 0xff
+ 809:   and
+ 80a:   dup2
+ 80b:   mstore
+ 80c:   push1 0x20
+ 80e:   add
+ 80f:   push1 0xe2 # selector("fullExit(uint32,address)")
+ 811:   push1 0xff
+ 813:   and
+ 814:   dup2
+ 815:   mstore
+ 816:   pop
+ 817:   dup2
+ 818:   mstore
+ 819:   pop
+ 81a:   swap1
+ 81b:   pop
+ 81c:   push2 0x0838
+ 81f:   dup4
+ 820:   push2 0x0832
+ 823:   dup7
+ 824:   dup6
+ 825:   push2 0x08c5
+ 828:   swap1
+ 829:   swap2
+ 82a:   swap1
+ 82b:   push4 0xffffffff # selector("LOCK8605463013()") selector("test266151307()")
+ 830:   and
+ 831:   jump
+
+ 832:   jumpdest
+ 833:   swap1
+ 834:   push2 0x09d4
+ 837:   jump
+
+ 838:   jumpdest
+ 839:   swap4
+ 83a:   pop
+ 83b:   push2 0x0848
+ 83e:   dup4
+ 83f:   push2 0x0832
+ 842:   dup5
+ 843:   dup8
+ 844:   push2 0x08c5
+ 847:   jump
+
+ 848:   jumpdest
+ 849:   swap4
+ 84a:   pop
+ 84b:   push2 0x0858
+ 84e:   dup4
+ 84f:   push2 0x0832
+ 852:   dup5
+ 853:   dup8
+ 854:   push2 0x08c5
+ 857:   jump
+
+ 858:   jumpdest
+ 859:   swap4
+ 85a:   pop
+ 85b:   push2 0x0868
+ 85e:   dup4
+ 85f:   push2 0x0832
+ 862:   dup5
+ 863:   dup8
+ 864:   push2 0x08c5
+ 867:   jump
+
+ 868:   jumpdest
+ 869:   swap4
+ 86a:   pop
+ 86b:   push2 0x0878
+ 86e:   dup4
+ 86f:   push2 0x0832
+ 872:   dup5
+ 873:   dup8
+ 874:   push2 0x08c5
+ 877:   jump
+
+ 878:   jumpdest
+ 879:   swap4
+ 87a:   pop
+ 87b:   push2 0x0888
+ 87e:   dup4
+ 87f:   push2 0x0832
+ 882:   dup5
+ 883:   dup8
+ 884:   push2 0x08c5
+ 887:   jump
+
+ 888:   jumpdest
+ 889:   swap4
+ 88a:   pop
+ 88b:   push2 0x0894
+ 88e:   dup5
+ 88f:   dup3
+ 890:   push2 0x0a85
+ 893:   jump
+
+ 894:   jumpdest
+ 895:   push2 0x08b0
+ 898:   jumpi
+
+ 899:   push1 0x40
+ 89b:   mload
+ 89c:   push3 0x461bcd
+ 8a0:   push1 0xe5
+ 8a2:   shl
+ 8a3:   dup2
+ 8a4:   mstore
+ 8a5:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+ 8a7:   add
+ 8a8:   push2 0x0091
+ 8ab:   swap1
+ 8ac:   push2 0x0c4f
+ 8af:   jump
+
+ 8b0:   jumpdest
+ 8b1:   pop
+ 8b2:   pop
+ 8b3:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ 8b5:   dup1
+ 8b6:   sload
+ 8b7:   push1 0xff
+ 8b9:   not
+ 8ba:   and
+ 8bb:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ 8bd:   or
+ 8be:   swap1
+ 8bf:   sstore
+ 8c0:   pop
+ 8c1:   pop
+ 8c2:   pop
+ 8c3:   pop
+ 8c4:   jump
+
+ 8c5:   jumpdest
+ 8c6:   push2 0x08cd
+ 8c9:   push2 0x0b92
+ 8cc:   jump
+
+ 8cd:   jumpdest
+ 8ce:   push2 0x08d5
+ 8d1:   push2 0x0b92
+ 8d4:   jump
+
+ 8d5:   jumpdest
+ 8d6:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 8d8:   jumpdest
+ 8d9:   push1 0x06
+ 8db:   dup2
+ 8dc:   lt
+ 8dd:   iszero
+ 8de:   push2 0x09ca
+ 8e1:   jumpi
+
+ 8e2:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 8e4:   jumpdest
+ 8e5:   push1 0x06
+ 8e7:   dup2
+ 8e8:   lt
+ 8e9:   iszero
+ 8ea:   push2 0x09b7
+ 8ed:   jumpi
+
+ 8ee:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 8f0:   jumpdest
+ 8f1:   push1 0x06
+ 8f3:   dup2
+ 8f4:   lt
+ 8f5:   iszero
+ 8f6:   push2 0x09a4
+ 8f9:   jumpi
+
+ 8fa:   push2 0x095b
+ 8fd:   dup8
+ 8fe:   dup5
+ 8ff:   push1 0x06
+ 901:   dup2
+ 902:   lt
+ 903:   push2 0x090e
+ 906:   jumpi
+
+ 907:   push2 0x090e
+ 90a:   push2 0x0c75
+ 90d:   jump
+
+ 90e:   jumpdest
+ 90f:   push1 0x20
+ 911:   mul
+ 912:   add
+ 913:   mload
+ 914:   dup3
+ 915:   push1 0x06
+ 917:   dup2
+ 918:   lt
+ 919:   push2 0x0924
+ 91c:   jumpi
+
+ 91d:   push2 0x0924
+ 920:   push2 0x0c75
+ 923:   jump
+
+ 924:   jumpdest
+ 925:   push1 0x20
+ 927:   mul
+ 928:   add
+ 929:   mload
+ 92a:   dup8
+ 92b:   dup4
+ 92c:   push1 0x06
+ 92e:   dup2
+ 92f:   lt
+ 930:   push2 0x093b
+ 933:   jumpi
+
+ 934:   push2 0x093b
+ 937:   push2 0x0c75
+ 93a:   jump
+
+ 93b:   jumpdest
+ 93c:   push1 0x20
+ 93e:   mul
+ 93f:   add
+ 940:   mload
+ 941:   dup5
+ 942:   push1 0x06
+ 944:   dup2
+ 945:   lt
+ 946:   push2 0x0951
+ 949:   jumpi
+
+ 94a:   push2 0x0951
+ 94d:   push2 0x0c75
+ 950:   jump
+
+ 951:   jumpdest
+ 952:   push1 0x20
+ 954:   mul
+ 955:   add
+ 956:   mload
+ 957:   push2 0x0b3d
+ 95a:   jump
+
+ 95b:   jumpdest
+ 95c:   dup5
+ 95d:   dup5
+ 95e:   push1 0x06
+ 960:   dup2
+ 961:   lt
+ 962:   push2 0x096d
+ 965:   jumpi
+
+ 966:   push2 0x096d
+ 969:   push2 0x0c75
+ 96c:   jump
+
+ 96d:   jumpdest
+ 96e:   push1 0x20
+ 970:   mul
+ 971:   add
+ 972:   mload
+ 973:   dup4
+ 974:   push1 0x06
+ 976:   dup2
+ 977:   lt
+ 978:   push2 0x0983 # selector("multiTransferEqual_L1R(address[],uint256)")
+ 97b:   jumpi
+
+ 97c:   push2 0x0983 # selector("multiTransferEqual_L1R(address[],uint256)")
+ 97f:   push2 0x0c75
+ 982:   jump
+
+ 983:   jumpdest
+ 984:   push1 0x20
+ 986:   mul
+ 987:   add
+ 988:   dup1
+ 989:   mload
+ 98a:   swap2
+ 98b:   swap1
+ 98c:   swap2
+ 98d:   xor
+ 98e:   push1 0xff
+ 990:   and
+ 991:   swap1
+ 992:   mstore
+ 993:   dup1
+ 994:   push2 0x099c
+ 997:   dup2
+ 998:   push2 0x0ce6
+ 99b:   jump
+
+ 99c:   jumpdest
+ 99d:   swap2
+ 99e:   pop
+ 99f:   pop
+ 9a0:   push2 0x08f0
+ 9a3:   jump
+
+ 9a4:   jumpdest
+ 9a5:   pop
+ 9a6:   dup1
+ 9a7:   push2 0x09af
+ 9aa:   dup2
+ 9ab:   push2 0x0ce6
+ 9ae:   jump
+
+ 9af:   jumpdest
+ 9b0:   swap2
+ 9b1:   pop
+ 9b2:   pop
+ 9b3:   push2 0x08e4
+ 9b6:   jump
+
+ 9b7:   jumpdest
+ 9b8:   pop
+ 9b9:   dup1
+ 9ba:   push2 0x09c2
+ 9bd:   dup2
+ 9be:   push2 0x0ce6
+ 9c1:   jump
+
+ 9c2:   jumpdest
+ 9c3:   swap2
+ 9c4:   pop
+ 9c5:   pop
+ 9c6:   push2 0x08d8
+ 9c9:   jump
+
+ 9ca:   jumpdest
+ 9cb:   pop
+ 9cc:   swap1
+ 9cd:   pop
+
+ 9ce:   jumpdest
+ 9cf:   swap3
+ 9d0:   swap2
+ 9d1:   pop
+ 9d2:   pop
+ 9d3:   jump
+
+ 9d4:   jumpdest
+ 9d5:   push2 0x09dc
+ 9d8:   push2 0x0b92
+ 9db:   jump
+
+ 9dc:   jumpdest
+ 9dd:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 9df:   jumpdest
+ 9e0:   push1 0x06
+ 9e2:   dup2
+ 9e3:   lt
+ 9e4:   iszero
+ 9e5:   push2 0x0a7d
+ 9e8:   jumpi
+
+ 9e9:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ 9eb:   jumpdest
+ 9ec:   push1 0x06
+ 9ee:   dup2
+ 9ef:   lt
+ 9f0:   iszero
+ 9f1:   push2 0x0a6a
+ 9f4:   jumpi
+
+ 9f5:   dup4
+ 9f6:   dup3
+ 9f7:   push1 0x06
+ 9f9:   dup2
+ 9fa:   lt
+ 9fb:   push2 0x0a06
+ 9fe:   jumpi
+
+ 9ff:   push2 0x0a06
+ a02:   push2 0x0c75
+ a05:   jump
+
+ a06:   jumpdest
+ a07:   push1 0x20
+ a09:   mul
+ a0a:   add
+ a0b:   mload
+ a0c:   dup2
+ a0d:   push1 0x06
+ a0f:   dup2
+ a10:   lt
+ a11:   push2 0x0a1c
+ a14:   jumpi
+
+ a15:   push2 0x0a1c
+ a18:   push2 0x0c75
+ a1b:   jump
+
+ a1c:   jumpdest
+ a1d:   push1 0x20
+ a1f:   mul
+ a20:   add
+ a21:   mload
+ a22:   dup6
+ a23:   dup4
+ a24:   push1 0x06
+ a26:   dup2
+ a27:   lt
+ a28:   push2 0x0a33
+ a2b:   jumpi
+
+ a2c:   push2 0x0a33
+ a2f:   push2 0x0c75
+ a32:   jump
+
+ a33:   jumpdest
+ a34:   push1 0x20
+ a36:   mul
+ a37:   add
+ a38:   mload
+ a39:   dup3
+ a3a:   push1 0x06
+ a3c:   dup2
+ a3d:   lt
+ a3e:   push2 0x0a49
+ a41:   jumpi
+
+ a42:   push2 0x0a49
+ a45:   push2 0x0c75
+ a48:   jump
+
+ a49:   jumpdest
+ a4a:   push1 0x20
+ a4c:   mul
+ a4d:   add
+ a4e:   dup1
+ a4f:   mload
+ a50:   swap2
+ a51:   swap1
+ a52:   swap2
+ a53:   xor
+ a54:   push1 0xff
+ a56:   and
+ a57:   swap1
+ a58:   mstore
+ a59:   dup1
+ a5a:   push2 0x0a62
+ a5d:   dup2
+ a5e:   push2 0x0ce6
+ a61:   jump
+
+ a62:   jumpdest
+ a63:   swap2
+ a64:   pop
+ a65:   pop
+ a66:   push2 0x09eb
+ a69:   jump
+
+ a6a:   jumpdest
+ a6b:   pop
+ a6c:   dup1
+ a6d:   push2 0x0a75
+ a70:   dup2
+ a71:   push2 0x0ce6
+ a74:   jump
+
+ a75:   jumpdest
+ a76:   swap2
+ a77:   pop
+ a78:   pop
+ a79:   push2 0x09df
+ a7c:   jump
+
+ a7d:   jumpdest
+ a7e:   pop
+ a7f:   swap2
+ a80:   swap3
+ a81:   swap2
+ a82:   pop
+ a83:   pop
+ a84:   jump
+
+ a85:   jumpdest
+ a86:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ a88:   dup1
+
+ a89:   jumpdest
+ a8a:   push1 0x06
+ a8c:   dup2
+ a8d:   lt
+ a8e:   iszero
+ a8f:   push2 0x0b33
+ a92:   jumpi
+
+ a93:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+
+ a95:   jumpdest
+ a96:   push1 0x06
+ a98:   dup2
+ a99:   lt
+ a9a:   iszero
+ a9b:   push2 0x0b20
+ a9e:   jumpi
+
+ a9f:   dup4
+ aa0:   dup3
+ aa1:   push1 0x06
+ aa3:   dup2
+ aa4:   lt
+ aa5:   push2 0x0ab0
+ aa8:   jumpi
+
+ aa9:   push2 0x0ab0
+ aac:   push2 0x0c75
+ aaf:   jump
+
+ ab0:   jumpdest
+ ab1:   push1 0x20
+ ab3:   mul
+ ab4:   add
+ ab5:   mload
+ ab6:   dup2
+ ab7:   push1 0x06
+ ab9:   dup2
+ aba:   lt
+ abb:   push2 0x0ac6
+ abe:   jumpi
+
+ abf:   push2 0x0ac6
+ ac2:   push2 0x0c75
+ ac5:   jump
+
+ ac6:   jumpdest
+ ac7:   push1 0x20
+ ac9:   mul
+ aca:   add
+ acb:   mload
+ acc:   push1 0xff
+ ace:   and
+ acf:   dup6
+ ad0:   dup4
+ ad1:   push1 0x06
+ ad3:   dup2
+ ad4:   lt
+ ad5:   push2 0x0ae0
+ ad8:   jumpi
+
+ ad9:   push2 0x0ae0
+ adc:   push2 0x0c75
+ adf:   jump
+
+ ae0:   jumpdest
+ ae1:   push1 0x20
+ ae3:   mul
+ ae4:   add
+ ae5:   mload
+ ae6:   dup3
+ ae7:   push1 0x06
+ ae9:   dup2
+ aea:   lt
+ aeb:   push2 0x0af6
+ aee:   jumpi
+
+ aef:   push2 0x0af6
+ af2:   push2 0x0c75
+ af5:   jump
+
+ af6:   jumpdest
+ af7:   push1 0x20
+ af9:   mul
+ afa:   add
+ afb:   mload
+ afc:   push1 0xff
+ afe:   and
+ aff:   eq
+ b00:   push2 0x0b0e
+ b03:   jumpi
+
+ b04:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ b06:   swap3
+ b07:   pop
+ b08:   pop
+ b09:   pop
+ b0a:   push2 0x09ce
+ b0d:   jump
+
+ b0e:   jumpdest
+ b0f:   dup1
+ b10:   push2 0x0b18
+ b13:   dup2
+ b14:   push2 0x0ce6
+ b17:   jump
+
+ b18:   jumpdest
+ b19:   swap2
+ b1a:   pop
+ b1b:   pop
+ b1c:   push2 0x0a95
+ b1f:   jump
+
+ b20:   jumpdest
+ b21:   pop
+ b22:   dup1
+ b23:   push2 0x0b2b
+ b26:   dup2
+ b27:   push2 0x0ce6
+ b2a:   jump
+
+ b2b:   jumpdest
+ b2c:   swap2
+ b2d:   pop
+ b2e:   pop
+ b2f:   push2 0x0a89
+ b32:   jump
+
+ b33:   jumpdest
+ b34:   pop
+ b35:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ b37:   swap4
+ b38:   swap3
+ b39:   pop
+ b3a:   pop
+ b3b:   pop
+ b3c:   jump
+
+ b3d:   jumpdest
+ b3e:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ b40:   dup1
+
+ b41:   jumpdest
+ b42:   push1 0xff
+ b44:   dup4
+ b45:   and
+ b46:   iszero
+ b47:   push2 0x0b8b
+ b4a:   jumpi
+
+ b4b:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ b4d:   dup4
+ b4e:   and
+ b4f:   iszero
+ b50:   push2 0x0b56
+ b53:   jumpi
+
+ b54:   dup4
+ b55:   xor
+
+ b56:   jumpdest
+ b57:   push1 0x80 # selector("conduct_auto(uint256,uint256,uint256)")
+ b59:   dup5
+ b5a:   and
+ b5b:   iszero
+ b5c:   push2 0x0b71
+ b5f:   jumpi
+
+ b60:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ b62:   dup5
+ b63:   push1 0xff
+ b65:   and
+ b66:   swap1
+ b67:   shl
+ b68:   push1 0x1b
+ b6a:   xor
+ b6b:   swap4
+ b6c:   pop
+ b6d:   push2 0x0b7c
+ b70:   jump
+
+ b71:   jumpdest
+ b72:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ b74:   dup5
+ b75:   push1 0xff
+ b77:   and
+ b78:   swap1
+ b79:   shl
+ b7a:   swap4
+ b7b:   pop
+
+ b7c:   jumpdest
+ b7d:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ b7f:   dup4
+ b80:   push1 0xff
+ b82:   and
+ b83:   swap1
+ b84:   shr
+ b85:   swap3
+ b86:   pop
+ b87:   push2 0x0b41
+ b8a:   jump
+
+ b8b:   jumpdest
+ b8c:   swap4
+ b8d:   swap3
+ b8e:   pop
+ b8f:   pop
+ b90:   pop
+ b91:   jump
+
+ b92:   jumpdest
+ b93:   push1 0x40
+ b95:   mload
+ b96:   dup1
+ b97:   push1 0xc0
+ b99:   add
+ b9a:   push1 0x40
+ b9c:   mstore
+ b9d:   dup1
+ b9e:   push1 0x06
+ ba0:   swap1
+
+ ba1:   jumpdest
+ ba2:   push2 0x0ba9
+ ba5:   push2 0x0bbf
+ ba8:   jump
+
+ ba9:   jumpdest
+ baa:   dup2
+ bab:   mstore
+ bac:   push1 0x20
+ bae:   add
+ baf:   swap1
+ bb0:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ bb2:   swap1
+ bb3:   sub
+ bb4:   swap1
+ bb5:   dup2
+ bb6:   push2 0x0ba1
+ bb9:   jumpi
+
+ bba:   swap1
+ bbb:   pop
+ bbc:   pop
+ bbd:   swap1
+ bbe:   jump
+
+ bbf:   jumpdest
+ bc0:   push1 0x40
+ bc2:   mload
+ bc3:   dup1
+ bc4:   push1 0xc0
+ bc6:   add
+ bc7:   push1 0x40
+ bc9:   mstore
+ bca:   dup1
+ bcb:   push1 0x06
+ bcd:   swap1
+ bce:   push1 0x20
+ bd0:   dup3
+ bd1:   mul
+ bd2:   dup1
+ bd3:   calldatasize
+ bd4:   dup4
+ bd5:   calldatacopy
+ bd6:   pop
+ bd7:   swap2
+ bd8:   swap3
+ bd9:   swap2
+ bda:   pop
+ bdb:   pop
+ bdc:   jump
+
+ bdd:   jumpdest
+ bde:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ be0:   dup1
+ be1:   push1 0x20
+ be3:   dup4
+ be4:   dup6
+ be5:   sub
+ be6:   slt
+ be7:   iszero
+ be8:   push2 0x0bf0
+ beb:   jumpi
+
+ bec:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ bee:   dup1
+ bef:   revert
+
+ bf0:   jumpdest
+ bf1:   dup3
+ bf2:   calldataload
+ bf3:   push8 0xffffffffffffffff
+ bfc:   dup1
+ bfd:   dup3
+ bfe:   gt
+ bff:   iszero
+ c00:   push2 0x0c08
+ c03:   jumpi
+
+ c04:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c06:   dup1
+ c07:   revert
+
+ c08:   jumpdest
+ c09:   dup2
+ c0a:   dup6
+ c0b:   add
+ c0c:   swap2
+ c0d:   pop
+ c0e:   dup6
+ c0f:   push1 0x1f
+ c11:   dup4
+ c12:   add
+ c13:   slt
+ c14:   push2 0x0c1c
+ c17:   jumpi
+
+ c18:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c1a:   dup1
+ c1b:   revert
+
+ c1c:   jumpdest
+ c1d:   dup2
+ c1e:   calldataload
+ c1f:   dup2
+ c20:   dup2
+ c21:   gt
+ c22:   iszero
+ c23:   push2 0x0c2b
+ c26:   jumpi
+
+ c27:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c29:   dup1
+ c2a:   revert
+
+ c2b:   jumpdest
+ c2c:   dup7
+ c2d:   push1 0x20
+ c2f:   dup3
+ c30:   dup6
+ c31:   add
+ c32:   add
+ c33:   gt
+ c34:   iszero
+ c35:   push2 0x0c3d
+ c38:   jumpi
+
+ c39:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c3b:   dup1
+ c3c:   revert
+
+ c3d:   jumpdest
+ c3e:   push1 0x20
+ c40:   swap3
+ c41:   swap1
+ c42:   swap3
+ c43:   add
+ c44:   swap7
+ c45:   swap2
+ c46:   swap6
+ c47:   pop
+ c48:   swap1
+ c49:   swap4
+ c4a:   pop
+ c4b:   pop
+ c4c:   pop
+ c4d:   pop
+ c4e:   jump
+
+ c4f:   jumpdest
+ c50:   push1 0x20
+ c52:   dup1
+ c53:   dup3
+ c54:   mstore
+ c55:   push1 0x0c # selector("gumXZCZ()")
+ c57:   swap1
+ c58:   dup3
+ c59:   add
+ c5a:   mstore
+ c5b:   push12 0x696e76616c696420666c6167
+ c68:   push1 0xa0 # selector("tree_stream(bytes,bytes)")
+ c6a:   shl
+ c6b:   push1 0x40
+ c6d:   dup3
+ c6e:   add
+ c6f:   mstore
+ c70:   push1 0x60
+ c72:   add
+ c73:   swap1
+ c74:   jump
+
+ c75:   jumpdest
+ c76:   push4 0x4e487b71 # selector("Panic(uint256)")
+ c7b:   push1 0xe0
+ c7d:   shl
+ c7e:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c80:   mstore
+ c81:   push1 0x32
+ c83:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+ c85:   mstore
+ c86:   push1 0x24
+ c88:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c8a:   revert
+
+ c8b:   jumpdest
+ c8c:   push4 0x4e487b71 # selector("Panic(uint256)")
+ c91:   push1 0xe0
+ c93:   shl
+ c94:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ c96:   mstore
+ c97:   push1 0x11
+ c99:   push1 0x04 # selector("gjafkehcdbi(uint256,uint256,address)")
+ c9b:   mstore
+ c9c:   push1 0x24
+ c9e:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ ca0:   revert
+
+ ca1:   jumpdest
+ ca2:   dup2
+ ca3:   dup2
+ ca4:   sub
+ ca5:   dup2
+ ca6:   dup2
+ ca7:   gt
+ ca8:   iszero
+ ca9:   push2 0x09ce
+ cac:   jumpi
+
+ cad:   push2 0x09ce
+ cb0:   push2 0x0c8b
+ cb3:   jump
+
+ cb4:   jumpdest
+ cb5:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ cb7:   dup2
+ cb8:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ cba:   not
+ cbb:   div
+ cbc:   dup4
+ cbd:   gt
+ cbe:   dup3
+ cbf:   iszero
+ cc0:   iszero
+ cc1:   and
+ cc2:   iszero
+ cc3:   push2 0x0cce
+ cc6:   jumpi
+
+ cc7:   push2 0x0cce
+ cca:   push2 0x0c8b
+ ccd:   jump
+
+ cce:   jumpdest
+ ccf:   pop
+ cd0:   mul
+ cd1:   swap1
+ cd2:   jump
+
+ cd3:   jumpdest
+ cd4:   dup1
+ cd5:   dup3
+ cd6:   add
+ cd7:   dup1
+ cd8:   dup3
+ cd9:   gt
+ cda:   iszero
+ cdb:   push2 0x09ce
+ cde:   jumpi
+
+ cdf:   push2 0x09ce
+ ce2:   push2 0x0c8b
+ ce5:   jump
+
+ ce6:   jumpdest
+ ce7:   push1 0x00 # https://www.4byte.directory/signatures/?bytes4_signature=0x00000000
+ ce9:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ ceb:   dup3
+ cec:   add
+ ced:   push2 0x0cf8
+ cf0:   jumpi
+
+ cf1:   push2 0x0cf8
+ cf4:   push2 0x0c8b
+ cf7:   jump
+
+ cf8:   jumpdest
+ cf9:   pop
+ cfa:   push1 0x01 # selector("account_info_rotate_tine(uint256)")
+ cfc:   add
+ cfd:   swap1
+ cfe:   jump
+
+ cff:   invalid
+
+ d00:   log2
+ d01:   push5 0x6970667358
+ d07:   invalid_22
+
+ d08:   slt
+ d09:   keccak256
+ d0a:   push22 0x84d33f62811e08b955e14ce35424ba0b471119d97420
+ d21:   swap5
+ d22:   invalid_e9
+
+ d23:   invalid_ed
+
+ d24:   sdiv
+ d25:   create2
+ d26:   invalid_2c
+
+ d27:   extcodehash
+
